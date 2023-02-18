@@ -61,7 +61,7 @@ while True:
         pieces = [snake.copy()]
         
     # 뱀모양 그리기
-    [pygame.draw.rect(screen, 'white', piece) for piece in pieces]
+    [pygame.draw.rect(screen, 'green', piece) for piece in pieces]
     
     # 음식 그리기
     [pygame.draw.rect(screen, 'red', food)]
