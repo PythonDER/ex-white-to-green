@@ -44,7 +44,7 @@ while True:
             keydelay = True
     
     # 배경(검은색)
-    screen.fill('black')
+    screen.fill('white')
     
     # 자기 자신과 부딪히지 않기
     crush = pygame.Rect.collidelist(snake, pieces[:-1]) != -1
@@ -61,7 +61,7 @@ while True:
         pieces = [snake.copy()]
         
     # 뱀모양 그리기
-    [pygame.draw.rect(screen, 'blue', piece) for piece in pieces]
+    [pygame.draw.rect(screen, 'green', piece) for piece in pieces]
     
     # 음식 그리기
     [pygame.draw.rect(screen, 'red', food)]
